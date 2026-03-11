@@ -128,7 +128,7 @@
     <section class="  bg-[repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc_1px,transparent_1px,transparent_4px)] h-5 w-full"></section>
 
     <!-- MAIN -->
-    <main class="flex bg-black flex-col lg:grid lg:grid-cols-[35%_1px_minmax(0,1fr)] w-full h-auto lg:h-[calc(100vh-72px)] overflow-hidden">
+    <main class="flex bg-black flex-col lg:flex-row h-auto lg:h-[calc(100vh-72px)]">
       <!-- LEFT: Hero Text (static on desktop, normal flow on mobile) -->
       <section
         class="w-full lg:w-[35%] lg:shrink-0 p-6 lg:p-12 flex flex-col gap-5 justify-start bg-black border-b border-[1px]
@@ -177,10 +177,10 @@
       </section>
 
       <!-- middle line divider -->
-       <section class=" bg-[repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc_1px,transparent_1px,transparent_4px)] h-auto w-[1px] hidden lg:block"></section>
+       <!-- <section class=" bg-[repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc_1px,transparent_1px,transparent_4px)] h-auto w-[1%] lg:shrink-0"></section> -->
 
       <!-- RIGHT: Scrollable Work Containers -->
-      <section id="right-panel" class="w-full h-full min-w-0 bg-white lg:overflow-y-scroll">
+      <section class="w-full flex-1 min-w-0 bg-white lg:overflow-y-scroll h-full">
         <div class="flex flex-col bg-white lg:gap-8 ">
          
           <!-- Project 2 -->
