@@ -737,6 +737,10 @@ video {
   width: 1px;
 }
 
+.w-\[65\%\] {
+  width: 65%;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1413,6 +1417,10 @@ html {
     width: 3.5rem;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1480,6 +1488,10 @@ html {
 
   .lg\:w-\[35\%\] {
     width: 35%;
+  }
+
+  .lg\:w-\[65\%\] {
+    width: 65%;
   }
 
   .lg\:shrink-0 {
