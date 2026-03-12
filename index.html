@@ -67,7 +67,7 @@
 
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-black flex flex-col text-gray-900 font-sans">
+  <body class="bg-black flex flex-col  text-gray-900 font-sans lg:overflow-hidden">
     <!-- NAVBAR -->
     <header
       class="w-full bg-[#f5f5f5] flex items-center px-6 py-4 lg:px-8 lg:py-3 border-b border-gray-200 transition-colors duration-300 sticky top-0 lg:relative z-50 text-gray-900"
@@ -124,32 +124,15 @@
         </div>
       </nav>
     </header>
-
-    <script>
-  (function() {
-    const header = document.querySelector('header');
-    const separator = document.querySelector('header + section');
-    function setHeaderHeight() {
-      const h = header.offsetHeight + (separator ? separator.offsetHeight : 0);
-      document.documentElement.style.setProperty('--header-h', h + 'px');
-    }
-    setHeaderHeight();
-    window.addEventListener('resize', setHeaderHeight);
-    // Re-measure after extensions may have injected elements
-    window.addEventListener('load', setHeaderHeight);
-    setTimeout(setHeaderHeight, 500);
-  })();
-</script>
-
     <!-- top line seperator -->
     <section class="  bg-[repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc_1px,transparent_1px,transparent_4px)] h-5 w-full"></section>
 
     <!-- MAIN -->
-    <main class="flex flex-col lg:flex-row bg-black w-full lg:overflow-hidden" style="height: calc(100dvh - var(--header-h, 0px))">
+    <main class="flex flex-col lg:flex-row bg-black w-full h-auto lg:h-[calc(100vh-72px)] overflow-hidden">
       <!-- LEFT: Hero Text (static on desktop, normal flow on mobile) -->
       <section
-        class="w-full lg:w-[35%] shrink-0 p-6 lg:p-12 flex flex-col gap-5 justify-start bg-black border-b border-[1px]
-         border-[rgba(164,164,164,0.5)] md:pt-12 lg:pt-24 lg:px-8 "
+        class="w-full lg:w-[35%] lg:min-w-[400px] shrink-0 p-6 lg:p-12 flex flex-col gap-5 justify-start bg-black border-b border-[1px]
+         border-[rgba(164,164,164,0.5)] md:pt-12 lg:pt-24 lg:px-8 lg:overflow-y-auto"
       >
        <div class="w-full flex flex-col gap-4">
   <div class="w-full flex flex-row justify-start items-center gap-2">
@@ -194,10 +177,10 @@
       </section>
 
       <!-- middle line divider -->
-       <section class="shrink-0 bg-[repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc_1px,transparent_1px,transparent_4px)] h-auto w-[1%]"></section>
+       <section class="shrink-0 bg-[repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc_1px,transparent_1px,transparent_4px)] h-auto w-[1%] lg:w-4"></section>
 
       <!-- RIGHT: Scrollable Work Containers -->
-      <section class="w-full lg:w-[64%] shrink-0 bg-white lg:overflow-y-scroll h-full">
+      <section id="right-panel" class="w-full lg:flex-1 shrink-0 bg-white lg:overflow-y-scroll h-full">
         <div class="flex flex-col bg-white lg:gap-8 ">
          
           <!-- Project 2 -->
