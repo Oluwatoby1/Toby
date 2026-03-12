@@ -67,6 +67,7 @@
 
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
+  
   <body class="bg-black flex flex-col  text-gray-900 font-sans lg:overflow-hidden">
     <!-- NAVBAR -->
     <header
@@ -128,10 +129,10 @@
     <section class="  bg-[repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc_1px,transparent_1px,transparent_4px)] h-5 w-full"></section>
 
     <!-- MAIN -->
-    <main class="flex flex-col lg:flex-row bg-black w-full h-auto lg:h-[calc(100vh-72px)] overflow-hidden">
+    <main class="flex flex-col lg:flex-row bg-black w-full h-auto lg:h-[calc(100vh-72px)] overflow-hidden" id="page" class="opacity-0 transition-opacity duration-700">
       <!-- LEFT: Hero Text (static on desktop, normal flow on mobile) -->
       <section
-        class="w-full lg:w-[35%] lg:min-w-[400px] shrink-0 p-6 lg:p-12 flex flex-col gap-5 justify-start bg-black border-b border-[1px]
+        class="w-full lg:w-[35%] lg:min-w-[400px] relative w-full lg:h-screen flex flex-col justify-between shrink-0 p-6 lg:p-12 flex flex-col gap-5 justify-start bg-black border-b border-[1px]
          border-[rgba(164,164,164,0.5)] md:pt-12 lg:pt-24 lg:px-8 lg:overflow-y-auto"
       >
        <div class="w-full flex flex-col gap-4">
@@ -180,7 +181,7 @@
        <section class="shrink-0 bg-[repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc_1px,transparent_1px,transparent_4px)] h-auto w-[1%] lg:w-4"></section>
 
       <!-- RIGHT: Scrollable Work Containers -->
-      <section id="right-panel" class="w-full lg:flex-1 shrink-0 bg-white lg:overflow-y-scroll h-full">
+      <section id="right-panel" class="w-full lg:flex-1 min-w-0  shrink-0 bg-white relative w-full lg:h-screen overflow-y-auto bg-white lg:overflow-y-scroll h-full">
         <div class="flex flex-col bg-white lg:gap-8 ">
          
           <!-- Project 2 -->
@@ -380,5 +381,10 @@
         });
       });
     </script>
+<script>
+window.addEventListener("load", () => {
+  document.getElementById("page").classList.remove("opacity-0");
+});
+</script>
   </body>
 </html>
