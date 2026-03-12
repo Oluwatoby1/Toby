@@ -68,10 +68,10 @@
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
   
-  <body class="bg-black flex flex-col  text-gray-900 font-sans lg:overflow-hidden">
+  <body class="bg-black flex w-full flex-col  text-gray-900 font-sans lg:overflow-hidden">
     <!-- NAVBAR -->
-    <header
-      class="w-full bg-[#f5f5f5] flex items-center px-6 py-4 lg:px-8 lg:py-3 border-b border-gray-200 transition-colors duration-300 sticky top-0 lg:relative z-50 text-gray-900"
+    <header 
+      class="w-full bg-[#f5f5f5] flex items-center px-6 py-4 lg:py-3 border-b border-gray-200 transition-colors duration-300 sticky top-0 lg:relative z-50 text-gray-900"
     >
       <a href="#home" class=""> 
         <img src="/assets/Logo.svg" alt="Carveau Logo" class="transition-all duration-300" fetchpriority="high" width="120" height="30">
@@ -129,10 +129,10 @@
     <section class="  bg-[repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc_1px,transparent_1px,transparent_4px)] h-5 w-full"></section>
 
     <!-- MAIN -->
-    <main class="flex flex-wrap lg:flex-nowrap bg-black w-full min-h-screen lg:h-[calc(100vh-72px)]">
+    <main  class="flex flex-wrap lg:flex-nowrap bg-black w-full min-h-screen lg:h-[calc(100vh-72px)]">
       <!-- LEFT: Hero Text (static on desktop, normal flow on mobile) -->
       <section
-        class="w-full lg:w-[35%] lg:min-w-[400px] relative lg:h-screen  shrink-0 p-6 lg:p-12 flex flex-col gap-5 justify-start bg-black border-b border-[1px]
+        class=" left-panel w-full lg:w-[35%] lg:min-w-[400px] relative lg:h-screen  shrink-0 p-6 lg:p-12 flex flex-col gap-5 justify-start bg-black border-b border-[1px]
          border-[rgba(164,164,164,0.5)] md:pt-12 lg:pt-24 lg:px-8 lg:overflow-y-auto"
       >
        <div class="w-full flex flex-col gap-4">
@@ -186,7 +186,7 @@
          
           <!-- Project 2 -->
         <div
-            class="min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center bg-[#d0d0d0]"
+            class=" right-frames min-h-[60vh] md:min-h-screen p-6 lg:px-32 md:p-12 flex items-center fade-slide justify-center bg-[#d0d0d0]"
           >
             <div class="max-w-full w-full">
               <img
@@ -199,7 +199,7 @@
           </div>
            <!-- Project 1 -->
           <div
-            class="min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center bg-[#d0d0d0]"
+            class=" right-frames min-h-[60vh] md:min-h-screen p-6 md:p-12 flex fade-slide items-center justify-center bg-[#d0d0d0]"
           >
             <div class="max-w-full w-full">
               <img
@@ -213,7 +213,7 @@
 
           <!-- Project 2 -->
         <div
-            class="min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center bg-[#d0d0d0]"
+            class=" right-frames min-h-[60vh] md:min-h-screen p-6 md:p-12 flex fade-slide items-center justify-center bg-[#d0d0d0]"
           >
             <div class="max-w-full w-full">
               <img
@@ -227,7 +227,7 @@
 
           <!-- Project 3 -->
           <div
-            class="min-h-[60vh] md:min-h-screen p-6 md:p-12 border-b flex items-center justify-center bg-gray-50"
+            class=" right-frames min-h-[60vh] md:min-h-screen p-6 md:p-12 fade-slide border-b flex items-center justify-center bg-gray-50"
           >
             <div class="max-w-2xl w-full bg-white p-6 md:p-8 shadow-lg rounded">
               <h2 class="text-2xl md:text-3xl font-bold mb-4">Project Three</h2>
@@ -253,7 +253,7 @@
   <!-- Big Text -->
   <div class="justify-start text-center items-center gap-6 flex flex-col">
     <a href="https://cal.com/toby-carveau/30min" target="_blank"
-       class="group relative inline-flex items-center justify-center gap-3 md:gap-6 text-6xl md:text-[6rem                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ] lg:text-[6rem] w-full font-montreal font-light text-white overflow-hidden pb-4">
+       class="group relative inline-flex items-center justify-center gap-3 md:gap-6 text-6xl md:text-[6rem] lg:text-[6rem] w-full font-montreal font-light text-white overflow-hidden pb-4">
       <span class="relative z-10 transition-colors duration-500 group-hover:text-[#e6eeeb]">
         Let's work with you
       </span>
@@ -382,6 +382,21 @@
       });
     </script>
 
-    
+    <script>
+      window.addEventListener('load', () => {
+        document.body.classList.add('loaded');
+      });
+    </script>
+    <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-slide').forEach(el => observer.observe(el));
+</script>
   </body>
 </html>
