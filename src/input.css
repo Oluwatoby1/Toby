@@ -88,7 +88,24 @@ header{
   padding-right: 1.5rem;
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1800px) {
+  header{
+    padding-left: 8rem !important;
+    padding-right: 8rem !important;
+  }
+  
+  .left-panel{
+    padding-left: 8rem !important;
+    padding-right: 8rem !important;
+  }
+  .right-frames{
+    padding-left: 8rem !important;
+    padding-right: 8rem !important;
+  
+}
+}
+
+@media (min-width: 2500px) {
   header{
     padding-left: 14rem !important;
     padding-right: 14rem !important;
