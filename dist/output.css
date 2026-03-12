@@ -582,6 +582,34 @@ video {
   position: sticky;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
+.inset-2 {
+  inset: 0.5rem;
+}
+
+.inset-3 {
+  inset: 0.75rem;
+}
+
+.inset-6 {
+  inset: 1.5rem;
+}
+
+.inset-4 {
+  inset: 1rem;
+}
+
+.inset-1 {
+  inset: 0.25rem;
+}
+
+.inset-5 {
+  inset: 1.25rem;
+}
+
 .inset-x-0 {
   left: 0px;
   right: 0px;
@@ -611,6 +639,10 @@ video {
   isolation: isolate;
 }
 
+.-z-10 {
+  z-index: -10;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -621,10 +653,6 @@ video {
 
 .z-\[60\] {
   z-index: 60;
-}
-
-.-z-10 {
-  z-index: -10;
 }
 
 .mb-4 {
@@ -663,6 +691,10 @@ video {
   display: none;
 }
 
+.aspect-\[16\/10\] {
+  aspect-ratio: 16/10;
+}
+
 .h-0\.5 {
   height: 0.125rem;
 }
@@ -695,12 +727,28 @@ video {
   height: 1px;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.max-h-full {
+  max-height: 100%;
+}
+
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[6vh\] {
+  min-height: 6vh;
+}
+
+.min-h-1 {
+  min-height: 0.25rem;
 }
 
 .w-0 {
@@ -996,12 +1044,47 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#f1f1f1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 241 241 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#f9f9f9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 249 249 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#ffffff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#ff1e1e\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 30 30 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[linear-gradient\(94deg\2c \#000_3\.74\%\2c \#4D4C4C_101\.85\%\)\] {
   background-image: linear-gradient(94deg,#000 3.74%,#4D4C4C 101.85%);
 }
 
 .bg-\[repeating-linear-gradient\(120deg\2c \#bcbcbc\2c \#bcbcbc_1px\2c transparent_1px\2c transparent_4px\)\] {
   background-image: repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc 1px,transparent 1px,transparent 4px);
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-6 {
