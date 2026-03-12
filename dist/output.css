@@ -623,6 +623,10 @@ video {
   z-index: 60;
 }
 
+.-z-10 {
+  z-index: -10;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -890,8 +894,8 @@ video {
   overflow: hidden;
 }
 
-.overflow-y-auto {
-  overflow-y: auto;
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded {
@@ -1384,6 +1388,13 @@ header{
   transform: translateY(0);
 }
 
+#right-panel {
+  overflow-y: scroll;
+  height: 100%;
+  scrollbar-width: thin;
+  /* Firefox */
+}
+
 .hover\:bg-\[\#f0f0f0\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(240 240 240 / var(--tw-bg-opacity, 1));
@@ -1576,10 +1587,6 @@ header{
     overflow-y: auto;
   }
 
-  .lg\:overflow-y-scroll {
-    overflow-y: scroll;
-  }
-
   .lg\:p-12 {
     padding: 3rem;
   }
@@ -1616,3 +1623,4 @@ header{
     line-height: 1.75rem;
   }
 }
+
