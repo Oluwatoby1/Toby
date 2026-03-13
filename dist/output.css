@@ -1329,6 +1329,10 @@ header{
     border-radius: 0.75rem;
   }
 
+  .md\:rounded-lg {
+    border-radius: 0.5rem;
+  }
+
   .md\:p-12 {
     padding: 3rem;
   }
@@ -1416,6 +1420,15 @@ header{
 
   .lg\:rounded-xl {
     border-radius: 0.75rem;
+  }
+
+  .lg\:rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .lg\:rounded-l {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
   }
 
   .lg\:px-40 {
