@@ -83,6 +83,7 @@ main, section {
 body.loaded {
   opacity: 1;
 } */
+ 
 header{
   padding: 1.5rem;
   padding-right: 1.5rem;
@@ -131,11 +132,5 @@ header{
 .fade-slide.show {
   opacity: 1;
   transform: translateY(0);
-}
-
-#right-panel {
-  overflow-y: scroll;
-  height: 100%;
-  scrollbar-width: thin; /* Firefox */
 }
 

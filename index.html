@@ -4,62 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Carveau | Strategic Product Design</title>
+    <title>Toby | Product Designer</title>
     <meta
       name="description"
       content="Carveau is a design agency focused on building clear, strategic product experiences for startups and companies."
     />
     <meta name="keywords" content="strategic product design, UX design, UI design, product strategy, framer development, product development, design agency" />
-    <meta name="author" content="Carveau" />
+    <meta name="author" content="Toby" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="theme-color" content="#000000" />
     <link rel="canonical" href="http://carveau.com/" />
-    <link rel="icon" type="image/svg+xml" href="/assets/carveau 3d logo.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/Logo.svg">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://carveau.com/" />
-    <meta property="og:title" content="Carveau — Strategic Product Design" />
-    <meta property="og:description" content="Carveau is a design agency focused on building clear, strategic product experiences for startups and companies." />
-    <meta property="og:image" content="http://carveau.com/assets/preview.png" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="http://carveau.com/" />
-    <meta property="twitter:title" content="Carveau — Strategic Product Design" />
-    <meta property="twitter:description" content="Carveau is a design agency focused on building clear, strategic product experiences for startups and companies." />
-    <meta property="twitter:site" content="@CarveauStudio" />
-    <meta property="twitter:image" content="http://carveau.com/assets/preview.png" />
-
-    <!-- AI & Search Engine Optimization (Schema Markup) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "DesignAgency",
-      "name": "Carveau",
-      "url": "https://carveau.com/",
-      "logo": "https://carveau.com/assets/Logo.svg",
-      "description": "Carveau is a strategic product design agency helping startups and companies design intuitive digital products, specializing in UX/UI design, product strategy, and Framer development.",
-      "email": "hello@carveau.com",
-      "sameAs": [
-        "https://x.com/CarveauStudio",
-        "https://www.behance.net/carveau"
-      ],
-      "knowsAbout": [
-        "Strategic Product Design",
-        "UX Design",
-        "UI Design",
-        "Product Strategy",
-        "Framer Development",
-        "Startups"
-      ],
-      "offers": {
-        "@type": "Offer",
-        "name": "Strategic Product Design Services",
-        "description": "UX/UI design, product strategy, and development for digital products."
-      }
-    }
-    </script>
+    
 
     <!-- Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -68,133 +25,73 @@
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
   
-  <body class="bg-black flex w-full flex-col  text-gray-900 font-sans lg:overflow-hidden">
+  <body class="bg-[#f9f9f9] flex w-full flex-col  text-gray-900 font-sans overflow-y-scroll">
     <!-- NAVBAR -->
     <header 
-      class="w-full bg-[#f5f5f5] flex items-center px-6 py-4 lg:py-3 border-b border-gray-200 transition-colors duration-300 sticky top-0 lg:relative z-50 text-gray-900"
+      class="w-full bg-[#f5f5f5] flex items-center px-6 md:px-32 lg:px-64 border-b border-gray-200 transition-colors duration-300 sticky top-0 lg:relative z-50 text-gray-900"
     >
-      <a href="#home" class=""> 
-        <img src="/assets/Logo.svg" alt="Carveau Logo" class="transition-all duration-300" fetchpriority="high" width="120" height="30">
+      <a href="/index.html" class=" flex flex-row items-center justify-start gap-2"> 
+        <img src="/assets/Logo.svg" alt="Carveau Logo" class="transition-all duration-300" fetchpriority="high" width="30" height="30">
+        <p class="text-base font-mono">toby.design</p>
       </a>
-      <div id="clock" class="hidden lg:block pt-2 ml-8 text-sm font-mono">
+      <div id="clock" class="hidden lg:block ml-8 text-sm font-mono">
         <div id="time">00:00</div>
       </div>
-      <nav class="hidden md:flex space-x-6 items-center ml-auto">
-        <a href="https://www.behance.net/carveau" target="_blank" class="hover:text-gray-700 font-montreal">Behance</a>
-        <a href="https://x.com/CarveauStudio" target="_blank" class="hover:text-gray-700 font-montreal">Twitter(X)</a>
-        <a href="mailto:hello@carveau.com" target="_blank" class="hover:text-gray-700 font-montreal"
-          >Send us an email</a
-        >
+      <nav class="flex space-x-6 items-center ml-auto">
        <a
   href="https://cal.com/toby-carveau/30min"
-  class="flex items-center gap-3 bg-[linear-gradient(94deg,#000_3.74%,#4D4C4C_101.85%)] font-montreal text-white px-6 py-3 hover:bg-gray-800 transition"
+  class="flex items-center justify-center sm:gap-1 gap-3 bg-[linear-gradient(94deg,#000_3.74%,#4D4C4C_101.85%)] font-montreal text-sm md:text-base text-white md:px-6 md:py-4  px-4 py-4 rounded-lg md:rounded-xl lg:rounded-xl  hover:bg-gray-800 transition"
   target="_blank"
 >
-  <div class="relative isolate flex items-center justify-center w-5 h-5">
-    <span class="absolute w-3 h-3 rounded-full bg-[#31BD80] animate-ping opacity-75 -z-10"></span>
-    <span class="relative w-3 h-3 rounded-full bg-[#31BD80]"></span>
-  </div>
 
-  Book a Strategy call
+  Send me a message
 </a>
+
            
       </nav>
-      <!-- Mobile menu button -->
-      <div class="md:hidden ml-auto z-[60]">
-        <button id="mobile-menu-button" class="relative w-8 h-8 focus:outline-none bg-transparent border-none cursor-pointer flex items-center justify-center">
-          <div class="block w-6 absolute transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
-            <span aria-hidden="true" class="block absolute h-0.5 w-6 bg-current transform transition duration-300 ease-in-out -translate-y-2" id="line1"></span>
-            <span aria-hidden="true" class="block absolute h-0.5 w-6 bg-current transform transition duration-300 ease-in-out" id="line2"></span>
-            <span aria-hidden="true" class="block absolute h-0.5 w-6 bg-current transform transition duration-300 ease-in-out   translate-y-2" id="line3"></span>
-          </div>
-        </button>
-      </div>
-      <nav
-        id="mobile-menu"
-        class="fixed inset-x-0 bottom-0 bg-[#0a0a0a] z-50 md:hidden flex flex-col justify-between p-8 transform translate-y-[-10px] opacity-0 pointer-events-none transition-all duration-300 ease-in-out shadow-[0_-10px_40px_rgba(0,0,0,0.5)] border-t border-[rgba(255,255,255,0.05)]"
-      >
-        <div class="flex flex-col gap-8 pt-8">
-          <a href="https://www.behance.net/carveau" target="_blank" class="text-4xl text-white hover:text-[#c5c5c5] font-montreal font-light tracking-wide transition-colors"
-            >Behance</a
-          >
-          <a href="https://x.com/CarveauStudio" target="_blank" class="text-4xl text-white hover:text-[#c5c5c5] font-montreal font-light tracking-wide transition-colors"
-            >Twitter(X)</a
-          >
-          <a href="mailto:hello@carveau.com" target="_blank" class="text-4xl text-white hover:text-[#c5c5c5] font-montreal font-light tracking-wide transition-colors capitalize"
-            >Send us an email</a
-          >
-        </div>
-        <div class="pb-10 w-full mt-auto pt-10 border-t border-[#222]">
-          <a
-            href="https://cal.com/toby-carveau/30min"
-            class="block w-full bg-white text-black py-4  hover:bg-gray-200 transition text-center font-montreal font-medium text-lg"
-            target="_blank">Book a Strategy call</a
-          >
-        </div>
-      </nav>
+    
+      
     </header>
-    <!-- top line seperator -->
-    <section class="  bg-[repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc_1px,transparent_1px,transparent_4px)] h-5 w-full"></section>
 
     <!-- MAIN -->
-    <main  class="flex flex-wrap lg:flex-nowrap bg-black w-full min-h-screen lg:h-[calc(100vh-72px)]">
+    <main  class="flex bg-[#ffffff] px-6 md:px-32 lg:px-40 flex-col w-full min-h-screen overflow-scroll">
       <!-- LEFT: Hero Text (static on desktop, normal flow on mobile) -->
       <section
-        class=" left-panel w-full lg:w-[35%] lg:min-w-[400px] relative lg:h-screen  shrink-0 p-6 lg:p-12 flex flex-col gap-5 justify-start bg-black border-b border-[1px]
-         border-[rgba(164,164,164,0.5)] md:pt-12 lg:pt-24 lg:px-8 lg:overflow-y-auto"
+
+        class=" left-panel w-full flex flex-col gap-5 justify-center items-start md:pt-6 lg:pt-6 lg:px-6 "
       >
-       <div class="w-full flex flex-col gap-4">
+       <div class="py-6 lg:py-12 px-2 md:px-20 lg:px-40 2xl:px-80 w-[100%] flex flex-col gap-4">
   <div class="w-full flex flex-row justify-start items-center gap-2">
     <div class="relative isolate flex items-center justify-center w-5 h-5">
       <span class="absolute w-3 h-3 rounded-full bg-[#31BD80] animate-ping opacity-75" style="z-index: -1;"></span>
       <span class="relative w-3 h-3 rounded-full bg-[#31BD80]"></span>
     </div>
-    <p class="text-sm text-[#dadada] font-light uppercase tracking-wide font-mono">
+    <p class="text-sm text-[#010101] font-light uppercase tracking-wide font-mono">
       Active for Projects
     </p>
   </div>
-  <h1 class="text-4xl font-montreal md:text-5xl text-white font-normal">
-    Design that makes products work.
-  </h1>
-  <p class="lg:text-[1.3rem] font-montreal font-normal text-[#AEAEAE] md:text-lg mb-6 md:mb-8 max-w-md">
-    We helps <span class="text-white">startups and companies
-    </span>design intuitive digital products <span class="text-white">that users understand instantly.
-    </span>
+ 
+  <p class="lg:text-[1.3rem] w-[100%] leading-relaxed  md:leading-loose lg:w-[100%] font-montreal font-[400] text-[#595858] md:text-lg mb-6  md:mb-8 ">
+    I’m Adio Testimony, a product designer focused on keeping interfaces simple — helping teams turn complex ideas into clear, usable products. <br>
+    <br>
+
+I design thoughtful experiences across SaaS platforms, fintech apps, and digital tools, with a strong focus on clarity and usability.
+<br>
+<br>
+<span class="text-[#010101] font-medium"> You can explore a selection of my recent work below. </span> If you'd like to collaborate or discuss an opportunity, feel free to reach out at <span class="text-[#0094FF] underline"> <a href="mailto:[testimonyadio8@gmail.com]">testimonyadio8@gmail.com</a></span> 
+.
   </p>
 </div>
-     <div class="w-full flex flex-col justify-start gap-12 ">
-         <a
-          href="https://cal.com/toby-carveau/30min"
-          class="bg-white font-montreal text-[1.15rem] text-black px-6 py-3 hover:bg-[#f0f0f0] transition w-max"
-          target="_blank"
-        >
-          Book a Strategy call
-        </a>
 
-        <div class="w-full flex flex-row gap-3 flex-wrap">
-        
-            <p class="border font-montreal text-sm border-gray-200 w-fit text-[#C5C5C5] py-3 px-4 ">UX DESIGN</p>
-            <p class="border font-montreal text-sm border-gray-200 w-fit text-[#C5C5C5] py-3 px-4 "> Product Strategy</p>
-               <p class="border font-montreal text-sm border-gray-200 w-fit text-[#C5C5C5] py-3 px-4 ">Product Design</p>
-            <p class="border font-montreal text-sm border-gray-200 w-fit text-[#C5C5C5] py-3 px-4 ">Product Development</p>
-        
-            <p class="border font-montreal text-sm border-gray-200 w-fit text-[#C5C5C5] py-3 px-4 ">Framer Development</p>
-        
-          
-        </div>
-     </div>
       </section>
 
-      <!-- middle line divider -->
-       <section class="shrink-0 bg-[repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc_1px,transparent_1px,transparent_4px)] h-auto w-[1%] lg:w-4"></section>
 
       <!-- RIGHT: Scrollable Work Containers -->
-      <section id="right-panel" class="w-full lg:w-[64%] lg:flex-1 min-w-0 shrink-0 bg-white relative overflow-y-scroll  h-full">
-          <div class="flex flex-col bg-white lg:gap-8">
-
+      <section id="right-panel" class="w-full ">
+          <div class="flex flex-col bg-white gap-4 md:gap-6 lg:gap-8">
              <!-- Project 6 -->
 
-    <div class="right-frames min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img8.webp"
         alt="Project Screenshot"
@@ -205,7 +102,7 @@
     </div>
  
 <!-- Project 2 -->
-<div class="right-frames landing relative min-h-[60vh] md:min-h-screen fade-slide bg-[#d0d0d0] overflow-hidden">
+<div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl landing relative min-h-[60vh] md:min-h-screen fade-slide bg-[#F6F6F6] overflow-hidden">
   <img
     src="assets/slides/img122.webp"
     alt="Project Screenshot"
@@ -216,7 +113,9 @@
 </div>
 
   <!-- Project 3 -->
-    <div class="right-frames min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+
+
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img2.webp"
         alt="Project Screenshot"
@@ -227,7 +126,8 @@
     </div>
 
 <!-- Project 2 -->
-<div class="right-frames landing relative min-h-[60vh] md:min-h-screen fade-slide bg-[#d0d0d0] overflow-hidden">
+<div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl landing relative min-h-[60vh] md:min-h-screen fade-slide bg-[#F6F6F6] overflow-hidden">
+  
   <img
     src="assets/slides/img6.webp"
     alt="Project Screenshot"
@@ -239,7 +139,7 @@
 
   
     <!-- Project 4-->
-    <div class="right-frames min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img1.webp"
         alt="Project Screenshot"
@@ -253,7 +153,7 @@
     
 <!-- Project 18 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img19.webp"
         alt="Project Screenshot"
@@ -264,7 +164,7 @@
     </div>
     <!-- Project 19 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img20.webp"
         alt="Project Screenshot"
@@ -275,7 +175,7 @@
     </div>
 
         <!-- Project 7 -->
-  <div class="right-frames landing relative min-h-[60vh] md:min-h-screen fade-slide bg-[#d0d0d0] overflow-hidden">
+  <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl landing relative min-h-[60vh] md:min-h-screen fade-slide bg-[#F6F6F6] overflow-hidden">
   <img
     src="assets/slides/img9.webp"
     alt="Project Screenshot"
@@ -289,7 +189,7 @@
     
  <!-- Project 8 -->
 
-    <div class="right-frames min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img10.webp"
         alt="Project Screenshot"
@@ -300,7 +200,7 @@
     </div>
 
             <!-- Project 9 -->
-  <div class="right-frames landing relative min-h-[60vh] md:min-h-screen fade-slide bg-[#d0d0d0] overflow-hidden">
+  <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl landing relative min-h-[60vh] md:min-h-screen fade-slide bg-[#F6F6F6] overflow-hidden">
   <img
     src="assets/slides/img11.webp"
     alt="Project Screenshot"
@@ -311,7 +211,7 @@
 </div>
 
    <!-- Project 1 -->
-<div class="right-frames landing relative min-h-[60vh] md:min-h-screen fade-slide bg-[#d0d0d0] overflow-hidden">
+<div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl landing relative min-h-[60vh] md:min-h-screen fade-slide bg-[#F6F6F6] overflow-hidden">
   <img
     src="assets/slides/img3.webp"
     alt="Project Screenshot"
@@ -324,7 +224,7 @@
 
  <!-- Project 10 -->
 
-    <div class="right-frames min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img12.webp"
         alt="Project Screenshot"
@@ -335,7 +235,7 @@
     </div>
  <!-- Project 10 -->
 
-    <div class="right-frames min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img13.webp"
         alt="Project Screenshot"
@@ -347,7 +247,7 @@
 
  <!-- Project 12 -->
 
-    <div class="right-frames min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img14.webp"
         alt="Project Screenshot"
@@ -359,7 +259,7 @@
 
      <!-- Project 13 -->
 
-    <div class="right-frames min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[60vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img15.webp"
         alt="Project Screenshot"
@@ -371,7 +271,7 @@
 
      <!-- Project 14 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img16.webp"
         alt="Project Screenshot"
@@ -382,7 +282,7 @@
     </div>
      <!-- Project 15 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img17.webp"
         alt="Project Screenshot"
@@ -394,7 +294,7 @@
 
 
               <!-- Project 17 -->
-   <div class="right-frames landing relative min-h-[60vh] md:min-h-screen fade-slide bg-[#d0d0d0] overflow-hidden">
+   <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl landing relative min-h-[60vh] md:min-h-screen fade-slide bg-[#F6F6F6] overflow-hidden">
   <img
     src="assets/slides/img18.webp"
     alt="Project Screenshot"
@@ -407,7 +307,7 @@
     
     <!-- Project 20 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img21.webp"
         alt="Project Screenshot"
@@ -418,7 +318,7 @@
     </div>
     <!-- Project 23 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img23.webp"
         alt="Project Screenshot"
@@ -430,7 +330,7 @@
 
                 <!-- Project 24 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img24.webp"
         alt="Project Screenshot"
@@ -441,7 +341,7 @@
     </div>
                 <!-- Project 25 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img25.webp"
         alt="Project Screenshot"
@@ -452,7 +352,7 @@
     </div>
                 <!-- Project 26 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img26.webp"
         alt="Project Screenshot"
@@ -463,7 +363,7 @@
     </div>
                 <!-- Project 27 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img27.webp"
         alt="Project Screenshot"
@@ -474,7 +374,7 @@
     </div>
                 <!-- Project 28 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img28.webp"
         alt="Project Screenshot"
@@ -485,7 +385,7 @@
     </div>
                 <!-- Project 29 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img29.webp"
         alt="Project Screenshot"
@@ -496,7 +396,7 @@
     </div>
                 <!-- Project 30 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img30.webp"
         alt="Project Screenshot"
@@ -507,7 +407,7 @@
     </div>
                 <!-- Project 31 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img31.webp"
         alt="Project Screenshot"
@@ -518,7 +418,7 @@
     </div>
                 <!-- Project 32 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img32.webp"
         alt="Project Screenshot"
@@ -529,7 +429,7 @@
     </div>
                 <!-- Project 33 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img33.webp"
         alt="Project Screenshot"
@@ -540,7 +440,7 @@
     </div>
                 <!-- Project 34 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img34.webp"
         alt="Project Screenshot"
@@ -551,7 +451,7 @@
     </div>
                 <!-- Project 35 -->
 
-    <div class="right-frames min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#d0d0d0]">
+    <div class="right-frames rounded-xl md:rounded-2xl  lg:rounded-3xl min-h-[6vh] md:min-h-screen p-6 md:p-12 flex items-center justify-center fade-slide bg-[#F6F6F6]">
       <img
         src="assets/slides/img35.webp"
         alt="Project Screenshot"
@@ -564,46 +464,48 @@
 
 
 
-          <!-- Footer / CTA -->
-          <div class="min-h-[60vh] md:min-h-screen p-6 md:p-12 flex flex-col justify-between bg-[#0a0a0a] text-white">
+       
+      </section>
+         <!-- Footer / CTA -->
+          <div class="min-h-[60vh] rounded-xl md:rounded-2xl  lg:rounded-3xl mt-6 mb-6 p-6 md:p-12 flex flex-col justify-between bg-[#f5f5f5]">
 
   <!-- Main content -->
   <div class="flex flex-col gap-10 flex-1 justify-center py-12">
 
   <!-- Big Text -->
-  <div class="justify-start text-center items-center gap-6 flex flex-col">
-    <a href="https://cal.com/toby-carveau/30min" target="_blank"
-       class="group relative inline-flex items-center justify-center gap-3 md:gap-6 text-6xl md:text-[6rem] lg:text-[6rem] w-full font-montreal font-light text-white overflow-hidden pb-4">
-      <span class="relative z-10 transition-colors duration-500 group-hover:text-[#e6eeeb]">
-        Let's work with you
+  <div class="justify-start text-center items-center gap-2 md:gap-6 flex flex-col">
+    <a href="mailto:testimonyadio8@gmail.com" target="_blank"
+       class="group relative inline-flex items-center justify-center gap-3 md:gap-6 text-3xl md:text-[6rem] lg:text-[6rem] w-full font-montreal font-light text-[#000000] overflow-hidden pb-4">
+      <span class="relative z-10 transition-colors duration-500 group-hover:text-[#535353] ">
+        Let's connect
       </span>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 md:w-14 md:h-14 lg:w-20 lg:h-20 relative z-10 transition-transform duration-500 group-hover:translate-x-2 group-hover:-translate-y-2 group-hover:text-[#e6eeeb]">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 md:w-14 md:h-14 lg:w-20 lg:h-20 relative z-10 transition-transform duration-500 group-hover:translate-x-2 group-hover:-translate-y-2 group-hover:text-[#535353]">
         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
       </svg>
-      <span class="absolute left-0 bottom-0 h-[3px] w-0 bg-[#eaefed] transition-all duration-500 group-hover:w-full"></span>
+      <span class="absolute right-[15%] left-[15%] bottom-0 h-[3px] w-0 bg-[#000000] transition-all duration-500 group-hover:w-[70%]"></span>
     </a>
 
-    <p class="text-[#555] font-montreal font-normal text-xl">Strategic product design for startups & companies.</p>
+    <p class="text-[#555] font-montreal font-normal text-sm md:text-xl">I'm currently available for a new role</p>
   </div>
 
-  <!-- Divider -->
-  <div class="w-full h-px bg-[rgba(255,255,255,0.06)]"></div>
+
 
   <!-- Bottom row -->
-  <div class="flex flex-col md:flex-row items-center md:items-center justify-between gap-4">
-    <div class="flex items-center gap-8 lg:gap-12">
-      <a href="https://www.behance.net/carveau" target="_blank" class="text-[#555] hover:text-white font-montreal text-sm lg:text-xl transition-colors duration-300">Behance</a>
-      <a href="https://x.com/CarveauStudio" target="_blank" class="text-[#555] hover:text-white font-montreal text-sm lg:text-xl transition-colors duration-300">Twitter / X</a>
-      <a href="mailto:hello@carveau.com" target="_blank" class="text-[#555] hover:text-white font-montreal text-sm  lg:text-xl transition-colors duration-300">hello@carveau.com</a>
-    </div>
-    <p class="text-[#333] font-mono text-sm lg:text-xl">© <span id="footer-year"></span> Carveau</p>
+  <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+    <div class="flex w-full items-start justify-between lg:gap-12">
+      <!-- <a href="https://www.behance.net/carveau" target="_blank" class="text-[#555] hover:text-white font-montreal text-sm lg:text-xl transition-colors duration-300">Behance</a> -->
+      <a href="https://x.com/TobyDesignX" target="_blank" class="text-[#555] hover:text-[#000000] font-montreal text-sm lg:text-xl transition-colors duration-300">Twitter / X</a>
+
+      <!-- <a href="mailto:hello@carveau.com" target="_blank" class="text-[#555] hover:text-white font-montreal text-sm  lg:text-xl transition-colors duration-300">hello@carveau.com</a>
+    </div> -->
+    <p class="text-[#333] font-mono text-sm lg:text-xl">© 2025<span id="footer-year"></span> Toby</p>
   </div>
 
 </div>
 
 </div>
         </div>
-      </section>
+
     </main>
 
     <!-- Clock Script -->
